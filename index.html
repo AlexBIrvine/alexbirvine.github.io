@@ -4,285 +4,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haunted House Maestro Fan Page</title>
-    <style>
-        @keyframes fireAnimation {
-            0% {
-                background-position: 0 0;
-            }
-
-            100% {
-                background-position: -200px -100px;
-            }
-        }
-
-        @keyframes flickerAnimation {
-            0% {
-                opacity: 1;
-            }
-
-            50% {
-                opacity: 0.5;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        body,
-        html {
-            margin: 0;
-            padding: 0;
-            font-family: 'Creepster', cursive;
-            background: #000;
-            color: #e0e0e0;
-            overflow-x: hidden;
-        }
-
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('https://cdnjs.cloudflare.com/ajax/libs/dom-fire/1.2.0/fire.gif');
-            opacity: 0.2;
-            z-index: -1;
-            animation: fireAnimation 10s linear infinite;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        header {
-            background: linear-gradient(45deg, #2c1654, #4a2b8b);
-            padding: 20px;
-            border-bottom: 3px solid #ff6600;
-            text-shadow: 0 0 10px #ff6600;
-            animation: flickerAnimation 3s infinite;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-around;
-            padding: 10px 0;
-            background: rgba(0, 0, 0, 0.5);
-        }
-
-        nav a {
-            color: #ff6600;
-            text-decoration: none;
-            font-weight: bold;
-            transition: all 0.3s ease;
-        }
-
-        nav a:hover {
-            color: #fff;
-            text-shadow: 0 0 10px #ff6600;
-            transform: scale(1.1);
-        }
-
-        .hero {
-            position: relative;
-            height: 400px;
-            overflow: hidden;
-            margin-bottom: 20px;
-        }
-
-        .hero img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            filter: grayscale(50%) sepia(50%);
-        }
-
-        .hero-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            background: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px #ff6600;
-        }
-
-        .content {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 20px;
-        }
-
-        .main,
-        .sidebar {
-            background: rgba(44, 22, 84, 0.7);
-            padding: 20px;
-            border-radius: 10px;
-            transition: all 0.3s ease;
-        }
-
-        .main:hover,
-        .sidebar:hover {
-            transform: scale(1.02);
-            box-shadow: 0 0 20px #ff6600;
-        }
-
-        .quotes {
-            margin-top: 20px;
-        }
-
-        .quote {
-            background: rgba(74, 43, 139, 0.5);
-            padding: 15px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-
-        .quote:hover {
-            transform: translateX(10px);
-            box-shadow: -5px 0 10px #ff6600;
-        }
-
-        .author {
-            text-align: right;
-            font-style: italic;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 10px;
-            margin-top: 20px;
-        }
-
-        .gallery img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-
-        .gallery img:hover {
-            transform: scale(1.1) rotate(5deg);
-            box-shadow: 0 0 20px #ff6600;
-        }
-    </style>
+    <link rel="stylesheet" href="./static/css/base.css">
+    <title>Damien Reaper Fan Page</title>
 </head>
 
 <body>
+
     <header>
-        <h1>Haunted House Maestro Fan Page</h1>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#testimonials">Testimonials</a>
-        </nav>
+        <h1>Damien Reaper Fan Page</h1>
+
+        <div class="socials">
+            <a href="https://www.youtube.com/@DamienReapersScreamoutLoud" id="large-social">
+                <img src="./static/image/socials/Youtube.png" alt="Youtube">
+            </a>
+            <a href="https://www.facebook.com/DamienReapersScreamOutPodcast">
+                <img src="./static/image/socials/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://x.com/DamienReaper20">
+                <img src="./static/image/socials/XTwitter.png" alt="X Twitter">
+            </a>
+            <a href="https://www.deviantart.com/damienreaper666">
+                <img src="./static/image/socials/Deviant.png" alt="Deviant Art">
+            </a>
+            <a href="https://www.tiktok.com/@damienreaper">
+                <img src="./static/image/socials/tiktok.png" alt="tiktok">
+            </a>
+        </div>
     </header>
 
-    <div class="container">
-        <section class="hero">
-            <img src="/api/placeholder/1200/400" alt="Haunted House Hero">
-            <div class="hero-text">
-                <h2>Welcome to the Fan Page of [Name]</h2>
-                <p>Master of Terror, Creator of Nightmares</p>
-            </div>
+    <main class="main">
+        <section id="about">
+            <h2>About the Maestro</h2>
+            <p>[Name] has been terrifying and delighting audiences for over [X] years with [his/her] innovative
+                haunted house designs and spine-chilling performances.</p>
         </section>
 
-        <div class="content">
-            <main class="main">
-                <section id="about">
-                    <h2>About the Maestro</h2>
-                    <p>[Name] has been terrifying and delighting audiences for over [X] years with [his/her] innovative
-                        haunted house designs and spine-chilling performances.</p>
-                </section>
+        <section id="gallery" class="gallery">
+            <img src="./static/image/gallery/1.png" alt="Haunted Scene 1">
+            <img src="./static/image/gallery/2.png" alt="Haunted Scene 2">
+            <img src="./static/image/gallery/3.png" alt="Haunted Scene 3">
+            <img src="./static/image/gallery/4.png" alt="Haunted Scene 4">
+            <img src="./static/image/gallery/5.png" alt="Haunted Scene 5">
+            <img src="./static/image/gallery/6.jpg" alt="Haunted Scene 6">
+        </section>
 
-                <section id="gallery" class="gallery">
-                    <img src="/api/placeholder/300/200" alt="Haunted Scene 1">
-                    <img src="/api/placeholder/300/200" alt="Haunted Scene 2">
-                    <img src="/api/placeholder/300/200" alt="Haunted Scene 3">
-                    <img src="/api/placeholder/300/200" alt="Haunted Scene 4">
-                </section>
+        <section id="testimonials" class="quotes">
+            <h2>Fan Testimonials</h2>
+            <div class="quote">
+                <p>"I generally hate people, but Damien Reaper is an exception to this.
+                    When I was working in the haunt business, I would always bring a book, a notebook or
+                    something else to keep myself occupied and make sure people got the message to move on so I
+                    could avoid conversation.
+                    Damien Reaper is such a kind, wonderful creature, that I would always put down my book,
+                    notebook or whatever manner of social barrier that I had in place to listen to him talk and
+                    hear his stories. 10/10 human being."
+                </p>
+                <p class="author">~ Zenbatman</p>
+            </div>
+            <div class="quote">
+                <p>"Damien Reaper was a lovely surprise one night when he appeared at Dent to work the rest of
+                    the season. He was going to be a clown in a cotton candy room. I've seen his other
+                    characters, but I didn't know how this would go. I must say that I enthusiastically want to
+                    get some Candy from Mr Reaper and satisfy my sweet tooth over and over again after seeing
+                    his performance. 5 out of 5 starts. Highly reccomend....would do again 😉"
+                </p>
+                <p class="author">~ Max</p>
+            </div>
+            <div class="quote">
+                <p>"When someone says "that's a fucking scary motherfucker", the next words they think of
+                    usually aren't "kind", "compassionate", or "friendly". But that's the exact experience
+                    you'll have knowing Damien Reaper. An absolute pro monster who can bring literal football
+                    players to the ground crying in fear, yet genuinely one of the most caring and welcoming
+                    people I've ever met in my life who truly cares for everyone around him. 5/5 star haunt
+                    friend, cannot be duplicated. you need to know the original."
+                </p>
+                <p class="author">~ Carmen</p>
+            </div>
+            <div class="quote">
+                <p>"Damien Reaper embodies Halloween 24/7 - not just the spooky, but the giving and ability to
+                    put trust in a total stranger to be kind. Meeting Damien at Dungeons of Delhi 23 years ago
+                    changed me from a casual lover of all things macabre into a scaring obsessed Halloween
+                    machine. Overall, he's a good egg."
+                </p>
+                <p class="author">~ Dan</p>
+            </div>
+            <div class="quote">
+                <p>"When I started my first year in the haunted house business, I was akin to a scared puppy who
+                    had no idea what he was doing. One night when I was helping with breaks, I got to work with
+                    Damien first hand and see how a real professional behaves in the industry. Damien ended up
+                    giving me pointers, showing me what to do by example, and genuinely welcoming me into the
+                    haunt family. He is a good person as he is spooky."
+                </p>
+                <p class="author">~ Alex</p>
+            </div>
+        </section>
+    </main>
 
-                <section id="testimonials" class="quotes">
-                    <h2>Fan Testimonials</h2>
-                    <div class="quote">
-                        <p>"[Insert terrifying quote here]"</p>
-                        <p class="author">- Terrified Fan</p>
-                    </div>
-                    <div class="quote">
-                        <p>"[Insert thrilling quote here]"</p>
-                        <p class="author">- Excited Visitor</p>
-                    </div>
-                </section>
-            </main>
-
-            <aside class="sidebar">
-                <h3>Latest Projects</h3>
-                <ul>
-                    <li>Nightmare on Elm Street Revival</li>
-                    <li>Ghostly Manor Expansion</li>
-                    <li>Virtual Reality Haunt Experience</li>
-                </ul>
-
-                <h3>Upcoming Events</h3>
-                <ul>
-                    <li>Halloween Spectacular - Oct 31</li>
-                    <li>Winter Frights - Dec 15</li>
-                    <li>Spring Scream Fest - Apr 1</li>
-                </ul>
-            </aside>
-        </div>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script>
-        // Spooky warping effect on mouse over
-        document.querySelectorAll('.main, .sidebar, .quote').forEach(element => {
-            element.addEventListener('mousemove', (e) => {
-                const { left, top, width, height } = element.getBoundingClientRect();
-                const x = (e.clientX - left) / width - 0.5;
-                const y = (e.clientY - top) / height - 0.5;
-
-                gsap.to(element, {
-                    duration: 0.3,
-                    transform: `perspective(500px) rotateY(${x * 10}deg) rotateX(${-y * 10}deg) scale(1.05)`,
-                    boxShadow: `
-                        ${-x * 20}px ${-y * 20}px 20px rgba(255, 102, 0, 0.3),
-                        ${x * 20}px ${y * 20}px 20px rgba(255, 102, 0, 0.3)
-                    `
-                });
-            });
-
-            element.addEventListener('mouseleave', () => {
-                gsap.to(element, {
-                    duration: 0.3,
-                    transform: 'perspective(500px) rotateY(0) rotateX(0) scale(1)',
-                    boxShadow: 'none'
-                });
-            });
-        });
-
-        // Random flicker effect for spooky ambiance
-        setInterval(() => {
-            const elements = document.querySelectorAll('h1, h2, h3, p');
-            const randomElement = elements[Math.floor(Math.random() * elements.length)];
-            gsap.to(randomElement, {
-                opacity: 0.5,
-                duration: 0.1,
-                yoyo: true,
-                repeat: 1
-            });
-        }, 2000);
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" />
+    <script src="./static/js/warping.js" />
 </body>
 
 </html>
